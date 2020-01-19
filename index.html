@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="internals/main.css">
+    <link rel="stylesheet" href="internals/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>The Title</title>
+</head>
+<body onload="abc()"> 
+    
+    <div id="heading">
+        <div id="Company">
+            <h1 class="company_name">Traverse.com</h1>
+        </div>
+        <ul id="nav">
+            <a href="index.html"><img src="images/home-solid.svg" alt="nopic" id="nav_home" class="nav_icon"/></a>
+            <a><img src="images/bars-solid.svg" alt="nopic" id="nav_bar" class="nav_icon"/></a>
+            <a href="about_us.html"><li class="nav_links" id="nav4">About Us</li></a>
+            <a href="services.html"><li class="nav_links" id="nav1">Services</li></a>
+            <a href="pricing.html"><li class="nav_links" id="nav3">Pricing</li></a>
+        </ul>
+    </div>
+            <div id="background_image">
+                <img id="home_background_image" src="images/homebackground.jpg" alt="no_picture"/>
+				<div id="background_content">
+                <p>We Make Your Travel More Exciting.</p><br/>
+                <div id="background_form" onmouseover="blur_background()" onmouseout="blur_reverse()">               
+                 <input type="text" list="placess" name="placess" id="home_text" maxlength="30" placeholder="Explore the Places!" />
+                 <datalist id = "placess">
+                    <option value = "Kathmandu"></option>
+                    <option value = "Bhaktapur"></option>
+                    <option value = "Pokhara"></option>
+                    <option value = "Chitwan"></option>
+                    <option value=  "Mustang"></option>
+                    <option value = "Rara lake"></option>
+                    <option value = "Arnapurna Basce Camp"></option>
+                    <option value = "Lumbini"></option>
+                    <option value = "Namche Bazar"></option>
+                  </datalist>
+				<a href="#scrolldownsearch"><button id="home_search" onclick="homesearch()"><i class="fa fa-fw fa-search"></i> </button></a> 
+                </div>
+                </div>
+                </div>
+                
+            
+            <!--Main Content-->
+            <div id="maincontent">
+                <div id="content_inside">
+                    <div id="saying" style="margin:auto; width:80%;">
+                        <p style="text-align:center; font-size:20px; margin-top:15vh; color:#000000">“Travel makes one modest. You see what a tiny place you occupy in the world.”</p><p style="text-align:right; font-size:20px; margin-bottom:15vh; color:#000000">– Gustave Flaubert</p>
+                    </div>
+                    
+                    <div id="poweredby">
+                        <h2 style="color:rgba(0, 0, 0, 0.836)">Powered By:</h2>
+                        <img src="images/powered1.png">
+                        <img src="images/powered2.png">
+                        <img src="images/powered3.jpg">
+                        <img src="images/powered4.jpg">
+                        <img src="images/powered5.png">
+                        <img src="images/powered6.png">
+                        <img src="images/powered7.jpg">
+                    </div>
+                       <h1  style="color:rgba(0, 0, 0, 0.801)">Select Your Destination:</h1>
+                    <!--12 column started-->
+                    <div class="column">
+                        <div class="columninside">
+                            <img src="images/1.jpg" alt="Mountains" style="width:100%">
+                            <div class="content">
+                                <p>Bhaktapur</p>
+                            </div>
+                            <div class="columninfo">
+                                <div class="columninfo_inside">
+                                        <p>Bhaktapur:</p> 
+                                        <p>District of temples.</p>
+                                        <p>15.4km far from Kathmandu</p>
+                                       <a href="bhaktapur.html"> <button class="visitbutton" onclick="visit()">Travel</button></a>
+                                </div>
+                    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="columninside">
+                            <img src="images/2.jpg" alt="Mountains" style="width:100%">
+                            <div class="content">
+                                <p>Kathmandu</p>
+                            </div>
+                            <div class="columninfo">
+                                <div class="columninfo_inside">
+                                    <p>Kathmandu:</p> 
+                                    <p>Peoples place</p>
+                                    <p>0km far from Kathmandu</p>
+                                    <a href="kathmandu.html"> <button class="visitbutton" onclick="visit()">Travel</button></a>                                
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column" id="scrolldownsearch">
+                        <div class="columninside">
+                            <img src="images/3.jpg" alt="Mountains" style="width:100%">
+                            <div class="content">
+                                <p>Pokhara</p>
+                            </div>
+                            <div class="columninfo">
+                                <div class="columninfo_inside">
+                                    <p>Pokhara:</p> 
+                                        <p>Fishtails and lake's beauty</p>
+                                        <p>201.1km far from Kathmandu</p>
+                                      
+                                        <a href="pokhara.html"> <button class="visitbutton" onclick="visit()">Travel</button></a>
+    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="columninside">
+                            <img src="images/4.jpg" alt="Mountains" style="width:100%">
+                            <div class="content">
+                                <p>Chitwan</p>
+                            </div>
+                            <div class="columninfo">
+                                <div class="columninfo_inside">
+
+                                    <p>Chitwan:</p> 
+                                    <p>Jungle safari</p>
+                                    <p>201.1km far from Kathmandu</p>
+                                   
+                                    <a href="chitwan.html"> <button class="visitbutton" onclick="visit()">Travel</button></a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="columninside">
+                            <img src="images/5.jpg" alt="Mountains" style="width:100%">
+                            <div class="content">
+                                <p>Mustang</p>
+                            </div>
+                            <div class="columninfo">
+                                <div class="columninfo_inside">
+                                    <p>Mustang:</p> 
+                                    <p>Country after Mountains</p>
+                                    <p>203 far from Kathmandu</p>
+                                 
+                                    <a href="mustang.html"> <button class="visitbutton" onclick="visit()">Travel</button></a>
+                                 </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="columninside">
+                            <img src="images/6.jpg" alt="Mountains" style="width:100%">
+                            <div class="content">
+                                <p>Swargadwari,Pyuthan</p>
+                            </div>
+                            <div class="columninfo">
+                                <div class="columninfo_inside">
+
+                                    
+                                    <p>Swargadwari:</p> 
+                                    <p>Gateway to Heaven</p>
+                                    <p>416.8km far from Kathmandu</p>
+                                    
+                                    <a href="swargadwari.html"> <button class="visitbutton" onclick="visit()">Travel</button></a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="columninside">
+                            <img src="images/7.jpg" alt="Mountains" style="width:100%">
+                            <div class="content">
+                                <p>NamcheBazar</p>
+                            </div>
+                            <div class="columninfo">
+                                <div class="columninfo_inside">
+
+
+                                    <p>Namchebazar:</p> 
+                                    <p>City in the lap of Everest</p>
+                                    <p>103 km far from Kathmandu</p>
+
+                                    <a href="namchebazar.html"> <button class="visitbutton" onclick="visit()">Travel</button></a>                          </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="columninside">
+                            <img src="images/8.jpg" alt="Mountains" style="width:100%">
+                            <div class="content">
+                                <p>Lumbini</p>
+                            </div>
+                            <div class="columninfo">
+                                <div class="columninfo_inside">
+
+                                    
+                                    <p>Lumbini:</p> 
+                                    <p>Place where Buddha was born</p>
+                                    <p>287.1 km far from Kathmandu</p>
+
+                                    <a href="lumbini.html"> <button class="visitbutton" onclick="visit()">Travel</button></a>                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="columninside">
+                            <img src="images/9.jpg" alt="Mountains" style="width:100%">
+                            <div class="content">
+                                <p>Ghandruk village</p>
+                            </div>
+                            <div class="columninfo">
+                                <div class="columninfo_inside">
+
+                                    
+                                    <p>Ghandruk Village:</p> 
+                                    <p>Typical Nepali Village</p>
+                                    <p>169 km far from Kathmandu</p>
+
+                                    <a href="ghandruk.html"> <button class="visitbutton" onclick="visit()">Travel</button></a>                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="columninside">
+                            <img src="images/10.jpg" alt="Mountains" style="width:100%">
+                            <div class="content">
+                                <p>Arnapurna Base Camp</p>
+                            </div>
+                            <div class="columninfo">
+                                <div class="columninfo_inside">
+
+                                    
+                                    <p>ABC:</p> 
+                                    <p>Best for Treeking</p>
+                                    <p>186 km far from Kathmandu</p>
+
+                                    <a href="abc.html"> <button class="visitbutton" onclick="visit()">Travel</button></a>                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="columninside">
+                            <img src="images/11.jpg" alt="Mountains" style="width:100%">
+                            <div class="content">
+                                <p>Shri Antu, Illam</p>
+                            </div>
+                            <div class="columninfo">
+                                <div class="columninfo_inside">
+
+                                    
+                                    <p>Shri Antu:</p> 
+                                    <p>First glimpse of sunrise.</p>
+                                    <p>496.2 km far from Kathmandu</p>
+
+                                    <a href="shriantu.html"> <button class="visitbutton" onclick="visit()">Travel</button></a>                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="columninside">
+                            <img src="images/12.jpg" alt="Mountains" style="width:100%">
+                            <div class="content">
+                                <p>Rara lake, Mugu</p>
+                            </div>
+                            <div class="columninfo">
+                                <div class="columninfo_inside">
+
+                                    
+                                    <p>Rara lake:</p> 
+                                    <p>Beauty of Water.(Trek)</p>
+                                    <p>376 km far from Kathmandu</p>
+
+                                    <a href="rara.html"> <button class="visitbutton" onclick="visit()">Travel</button></a>                                
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                            
+            <fieldset id="formetc">
+                <div id="form1" name="form" >
+                    <legend>Users Login</legend>
+                    <input name="Name" class="input" id="name" placeholder="Your Name"  required/><br>
+                    <input type="password" class="input"  name="password" id="password" placeholder="Your password" required/><br>
+                    <input type="submit" class="submit" onclick="loginsubmit()" value="LogIn"/>
+                    <input type="submit" class="submit" onclick="signupsubmit()" value="SignUp"/>
+                   
+                </div>
+                            
+                <div  id="form2" style="display:none;" target="_self">
+                    <legend>Users Signup</legend>
+                    <input name="Name" class="input" id="fname" placeholder="Enter your name"  autocomplete="off" required/><br>
+                    <input type="number" class="input" id="age" placeholder="Your Age" autocomplete="off" /><br>
+                    <input type="password" class="input" name="Spassword" id="spassword"  placeholder="Password" required/><br>
+                    <input type="password" class="input" name="repassword" id="repassword" placeholder="Re-type password" required/><br>
+                    <input type="submit" class="submit" onclick="loginagainsubmit()" value="LogIn"/>
+                    <input type="submit" class="submit" onclick="signupagainsubmit()" value="SignUp"/>
+                </div>
+                <p id="demo" style="font-size:22px;"></p>
+            </fieldset>
+        
+                <div class="cookiefooter" id="display" style="display:none;">
+                    <p>We use cookies to provide you with the best possible experience in your interactions with  Traverse. You agree to our use of cookies on your device by continuing to use our website or by clicking <button class="cookiebutton" onclick="ok()">I agree.</button></p>
+                    
+                </div>
+            </div>
+			<div id="footer">
+                <div id="footercontent">
+                    <h3 id="footer_h3"></h3>
+                    <p id="footer_p">
+                        <p>Copyright &copy; 2020 Traverse Nepal,Inc. All rights reserved.</p>
+                    <a href="#">Privacy Policies</a> | <span onclick="show()">Cookies Info</span> | <a href="#">Terms of services</a> | <a href="#">Any Qureies.</a>
+                    </p>
+                    <p>Thanks for the roll up and Get Connected with us on:</p>
+                    <a href="https://www.facebook.com"><img src="images/facebook-brands.svg" alt="nopic" /></a>
+                    <a href="https://www.instagram.com"><img src="images/instagram-brands.svg" alt="nopic" /></a>
+                    <a href="https://www.twitter.com"><img src="images/twitter-square-brands.svg" alt="nopic" /></a>
+                    <a href="https://www.paypal.com"><img src="images/paypal-brands.svg" alt="nopic" /></a>
+                </div>
+            </div>
+</body>
+    <script src="internals/main.js"></script>
+    
+</html>
